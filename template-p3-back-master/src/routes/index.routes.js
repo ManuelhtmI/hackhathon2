@@ -8,7 +8,6 @@ const transactionsRouter = require('./transactions.routes.js');
 const citiesBuyersRouter = require('./citiesBuyers.routes.js');
 const citiesFarmersRouter = require('./citiesFarmers.routes.js');
 
-router.use('/admins', adminRouter);
 router.use('/cities', citiesRouter);
 router.use('/buyers', buyersRouter);
 router.use('/products', productsRouter);
