@@ -1,9 +1,8 @@
 const { connection } = require('../db_connection');
-
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-  const sql = "SELECT * FROM buyers";
+  const sql = "SELECT * FROM cities";
   connection.query(sql, (err, results) => {
     if (err) {
       res.status(500).send({ errorMessage: err.message });
@@ -12,6 +11,4 @@ router.get('/', (req, res) => {
     }
   });
 });
-
 module.exports = router;
-
