@@ -1,10 +1,12 @@
-import Map from './components/map/map.jsx';
-
+// import Map from "./components/map/map.jsx";
+import Header from "./components/Header/Header.jsx";
 
 function App() {
   return (
     <div className="App">
-      <Map />
+      <Header />
+
+      {/* <Map /> */}
     </div>
   );
 }

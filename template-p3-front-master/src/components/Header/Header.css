@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.Header{
+    position: fixed;
+    top: 0;
+    left:0;
+
+} 
+.Logo{
+    background-color:#5a9449;
+    width: 75% ;
+    display: flex;
+} 
+
+.logo{
+    display: flex;
+    background-color:#5a9449;
+    justify-content: center;
+   
+}
+
+.Header .Logo{
+    height: 60px;
+   } 
+
+.logoSearch{
+    height: 10%;
+    width: 10%;
+
+} 
+.search{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Montserrat', 'Helvetica Neve', Arial, Helvetica, Arial, sans-serif;
+    background-color: #558846;
+    width: 100%;
+    color: white;
+
+} 
