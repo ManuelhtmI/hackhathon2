@@ -1,11 +1,10 @@
-import './App.css';
-import AdminList from './components/admin/AdminList';
+import Map from './components/map/map.jsx';
 
 
 function App() {
   return (
     <div className="App">
-      <AdminList />
+      <Map />
     </div>
   );
 }
