@@ -1,11 +1,21 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
 import Logo from "../../assets/logo.svg";
-import Search from "../../assets/search_logo.png";
 import iconSearch from "../../assets/iconSearch.png";
+import SearchLogo from "../../assets/search_logo.png";
+import axios from "axios";
 
 function Header() {
   const [open, setOpen] = useState(true);
+  const [cities, setCities] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/api/cities")
+      .then((res) => setCities(res.data));
+  }, []);
+
+
 
   function changeOpen() {
     if (open === true) {
@@ -19,20 +29,22 @@ function Header() {
     <div className="Header">
       <div className="logo">
         <img className="Logo" src={Logo} alt="logo" />
-        <div className="container">
-        <img
-            className="logoCity"
-            src={iconSearch}
-            alt="search"
-          />
-          <input  className="input" placeholder="Recherchez votre ville ici..." />{" "}
-          <button className="submi">Recherche</button>
-        </div>
-        
-      </div>
 
+        <div className="container">
+          <img className="logoCity" src={iconSearch} alt="search" />
+          {/* <input  className="input" placeholder="Recherchez votre ville ici..." />{" "}
+          <button className="submi">Recherche</button> */}
+
+          <select className="input">
+            {cities.map((cities) => (
+              <option>{cities.city} </option>
+            ))}
+          </select>
+
+        </div>
+      </div>
       <button className="search" onClick={changeOpen}>
-        <img className="main-logoSearch" src={Search} alt="search_logo" />
+        <img className="main-logoSearch" src={SearchLogo} alt="search_logo" />
         Recherche
       </button>
       <div className="hidden">
