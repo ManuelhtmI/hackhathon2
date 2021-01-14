@@ -39,7 +39,7 @@ function Preload() {
     return (
         <div onClick={show} className="total">
             <div className="total-part">
-                <picture><img className="logo" src={logo} alt="Logo comparateur-agricole"/></picture>
+                <picture><img className="logo-preload" src={logo} alt="Logo comparateur-agricole"/></picture>
                 <div className="div-pres">
                     <div id="anim1" className="pres-anim1">
                         <div className="pres-anim1-div">

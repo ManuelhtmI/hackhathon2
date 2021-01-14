@@ -1,5 +1,6 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import './map.css'
+import Header from "../Header/Header"
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Preload from '../preload/preload'
@@ -101,6 +102,7 @@ function Map() {
   return (
     <div id="mapid">
       <Preload />
+      <Header />
       <MapContainer center={setMap} zoom={10} className="map">
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
