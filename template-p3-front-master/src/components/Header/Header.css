@@ -1,40 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-.Header{
-    position: fixed;
-    top: 0;
-    left:0;
-
-} 
-.Logo{
-    background-color:#5a9449;
-    width: 75% ;
-    display: flex;
-} 
-
-.logo{
-    display: flex;
-    background-color:#5a9449;
-    justify-content: center;
-   
+.Header {
+  width: 100%;
 }
 
-.Header .Logo{
-    height: 60px;
-   } 
+.Logo {
+  background-color: var(--main-color);
+  display: flex;
+  width: 80%;
+}
 
-.logoSearch{
-    height: 10%;
-    width: 10%;
+.logo {
+  display: flex;
+  background-color: var(--main-color);
+  justify-content: center;
+}
+
+.Header .Logo {
+  height: 60px;
+}
+
+.main-logoSearch {
+  height: 10%;
+  width: 10%;
+  font-family: var(--main-font);
+}
+.search {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+  color: white;
+  border: var(--secondary-color);
+}
+.iconSearch {
+  background-color: #acc5a5;
+  height: 10%;
+  width: 10%;
+}
+
+.searchBar-city {
+  display: flex;
+  position: relative;
+}
+.input-SearchBar-city {
+  padding-left: 35px;
+  font-family: var(--secondary-font);
+  color: var(--dark);
+  width: 80%;
+}
+.secondary-logoSearch {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  left: 8px;
+  width: 20px;
+  height: 20px;
+}
+.submit {
+  color: #4d7a3f;
+  width: 30%;
+  background-color: var(--light);
+  border: var(--light);
+}
+
+
+.container{
+    display:none;
+} 
+.secondary-logoSearchCity{
+    display: none;
+} 
+.input-SearchBarCity{
+    display:none;
+} 
+.submitCity{
+    display: none;
+} 
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .Header .Logo {
+    height: 80px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .search {
+    display:none;
+  }
+ .container{
+    display: flex;
+    position: relative;
+    margin:20px;
+} 
+  
+.input{
+  padding-left: 50px;
+  font-family: var(--secondary-font);
+  color: var(--dark);
+  width: 90%;
+
+   } 
+.logoCity{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    left: 8px;
+    width: 20px;
 
 } 
-.search{
-    display: flex;
-    align-items: center;
-    font-weight: bold;
-    font-family: 'Montserrat', 'Helvetica Neve', Arial, Helvetica, Arial, sans-serif;
-    background-color: #558846;
-    width: 100%;
-    color: white;
+ .submi{
+    color: #4d7a3f;
+    width: 30%;
+    background-color: var(--light);
+    border: var(--light);
+    border-radius: 5px;
+
+} 
+.logo {
+    
+    margin-left: -50%;
+    padding-top:1%;
+  }
 
 } 
