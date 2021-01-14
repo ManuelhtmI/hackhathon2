@@ -66,8 +66,10 @@ function Map() {
 
   const avatar = [man1, man2, man3, man4, man5, man6, man7, man8, man9, man10, man11, man12, man13, man14, man15, man16, man17, man18, man19, man20, man21, man22, man23, man24, woman1, woman2, woman3, woman4, woman5, woman6, woman7, woman8, woman9, woman10, woman11, woman12, woman13, woman14, woman15, woman16, woman17, woman18, woman19, woman20, woman21, woman22, woman23, woman24]
 
+  const random = avatar[Math.floor(Math.random() * avatar.length)];
+
   const markerFarmers = L.icon({
-    iconUrl: avatar[Math.floor(Math.random() * avatar.length)],
+    iconUrl: random,
     iconSize: [40, 40],
     iconAnchor: [20, 40],
   })
@@ -127,6 +129,8 @@ function Map() {
             <Marker position={[farmers.lat, farmers.long]} icon={markerFarmers} >
               <Popup>
                 <h2>Taille de l'exploitation: {farmers.farm_size}ha</h2>
+                <h2>Dernier article vendu : {farmers.name} <br />le: {farmers.created_at}</h2>
+                <h2>Inscrit depuis le: {farmers.registered_at}</h2>
               </Popup>
             </Marker>
 
