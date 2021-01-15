@@ -2,6 +2,9 @@
 
 .Header {
   width: 100%;
+  position: fixed; 
+  top:0;
+  z-index: 1000;
 }
 
 .Logo {
@@ -75,14 +78,26 @@ margin-right: 5%;
 
 
 } 
+
+.listLegend {
+  /* background-color: black;  */
+  display: flex-start;
+  /* opacity: 0.8;  */
+
+  
+}
 .listLegend li{
   display:flex;
   align-items:center;
   list-style: none;
-  color: rgb(14, 95, 14);
+  /* color: rgb(14, 95, 14);
   font-weight: bold;
   font-family: var(--secondary-font);
-} 
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(100,109,111,1) 0%, rgba(68,170,56,1) 0%, rgba(54,210,33,0.9136029411764706) 45%, rgba(105,228,37,0.6054796918767507) 100%, rgba(28,55,62,1) 100%, rgba(17,90,136,1) 100%);
+
+}  */
+}
 .listLegend{
   padding: 4%;
 } 
