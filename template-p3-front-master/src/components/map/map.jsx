@@ -130,7 +130,7 @@ function Map() {
             <Marker position={[farmers.lat, farmers.long]} icon={farmerBuyers}>
               <Popup maxHeight={250} maxWidth={350}>
                 <div className="farmerCategory">
-                  <h5 className="infosMini2">Profil agriculteur</h5>
+                  <h5 className="infosMini2">PROFIL AGRICULTEUR</h5>
 
                   <img
                     src={farmers.avatar}
@@ -144,7 +144,7 @@ function Map() {
                     <h5 className="farmerText">Taille de l'exploitation:</h5>
                     <div id="hectares">
                       <h5 className="infosTitles">{farmers.farm_size}</h5>{" "}
-                      <p className="infosMini">HECTARES </p>
+                      <p className="infosMiniHectares">HECTARES </p>
                     </div>
                     <img
                       className="fieldpicture"
@@ -159,8 +159,7 @@ function Map() {
                 <div className="lastSell">
                   <h5 className="farmerText">Derniere transaction : </h5>{" "}
                   <p className="infosTitlesBorder">{farmers.name}</p>
-                  <h5 className="farmerText">
-                    {" "}
+                  <h5 className="farmerTextTransaction">
                       effectuée le: {farmers.created_at}
                   </h5>
                   <img

@@ -1,8 +1,11 @@
-#mapid { height: 180px; }
+#mapid { height: 180px;
+    ; }
 
 .leaflet-container{
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 90vh;
+    padding-top: 30vh;
+    display: flex;
 }
 
 .farmerAvatar {
@@ -14,13 +17,21 @@
     border-radius: 50%;
 }
 
+.farmerTextTransaction{
+    padding: 4px;
+    text-align: start;
+    margin-bottom: 0;
+    margin-top:16px;
+    font-size: 10pt;
+    font-style: italic;
+}
+
 .farmerText{
     padding: 4px;
     text-align: start;
     margin-bottom: 0;
     margin-top:16px;
-    font-size: 12px;
-    font-style: italic;
+    font-size: 11pt;
 }
 
 .farmerCategory {
@@ -28,10 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
- 
 }
-
 
 .fieldSize {
     display: flex;
@@ -47,37 +55,45 @@
 }
 
 .infosTitles {
-    font-size: 18px;
+    font-size: 14pt;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 8px;
     color: #E49E33;
-    
-
 }
+
 .infosTitlesBorder {
-    font-size: 18px;
+    font-size: 14pt;
+    font-weight: bold;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 8px;
     color: #E49E33;
-    padding: 8px;
-    border: 1px solid #E49E33;
+    padding: 10px;
+    border: 2px solid #5a9449;
 }
 
 .infosMini {
-    font-size:14px;
+    font-size:14pt;
     color:#5A9449;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.infosMiniHectares {
+    font-size:14pt;
+    color:#5A9449;
+    font-style: italic;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .infosMini2 {
-    font-size:14px;
+    font-size:16pt;
     color:#5A9449;
     font-weight: bold;
-    /* border-bottom: black 1.5px solid; */
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     text-align: center;
@@ -103,7 +119,7 @@
     justify-content: center;
     align-items: center;
     padding: 8px;
-    border: 1px solid #5A9449;
+    border: 2px solid #5A9449;
     margin-top:16px;
     margin-bottom: 16px;
 }
@@ -127,6 +143,7 @@
 .transactionPicture {
     width: 105px;
     height: 75px;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
