@@ -84,9 +84,14 @@
     margin-right: 50px;
     color: var(--light);
     background-color: var(--secondary-color);
-    border-color: rgb(126, 167, 126);
-    border-radius: 15px;
+    border-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: var(--secondary-color);
     font-weight: bold;
+    border-radius:12px 0 12px 0;
+	border:none;
+	padding:6px 0 6px 0;
+	box-shadow:1px 1px 3px rgb(127, 182, 131);
   }
   .logoLegent {
     margin-top: 6px;
