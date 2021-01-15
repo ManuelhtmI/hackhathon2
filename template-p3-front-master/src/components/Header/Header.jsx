@@ -44,9 +44,8 @@ function Header() {
         </button>
       </div>
 
-      <button className="search" onClick={changeOpen}>
+      <button className="search" onClick={changeOpen}> Légendes
         <img className="main-logoSearch" src={downArrow} alt="search_logo" />
-        Légendes
       </button>
       <div className="hidden">
         {open === true ? (
