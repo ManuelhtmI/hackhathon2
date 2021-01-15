@@ -92,7 +92,7 @@ function Map() {
         ></link>
       </head>
       <Transac />
-      <MapContainer center={setMap} zoom={9} className="map">
+      <MapContainer center={setMap} zoom={9} className="map" >
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -113,9 +113,8 @@ function Map() {
         {buyers.map((buyers) =>
           <Marker position={[buyers.lat, buyers.long]} icon={markerBuyers}>
             <Popup>
-              <a href="https://comparateuragricole.com/">
-                <h2>ComparateurAgricole.com</h2>
-              </a>
+              <h1>{buyers.name}</h1>
+              <h2>{buyers.type}</h2>
             </Popup>
           </Marker>
 

@@ -3,7 +3,7 @@ const { connection } = require('../db_connection');
 const router = require('express').Router();
 
 router.get('/', (req, res) => {
-  const sql = "SELECT DISTINCT last_name FROM farmers";
+  const sql = "SELECT DISTINCT farmer_id FROM transactions;";
   connection.query(sql, (err, results) => {
     if (err) {
       res.status(500).send({ errorMessage: err.message });

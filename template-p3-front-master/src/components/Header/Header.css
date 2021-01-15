@@ -53,6 +53,12 @@
 .listLegend {
   background-color: #bed1b9;
   padding: 10px;
+  border-radius: 0 0px 15px 15px;
+  z-index: 100000;
+}
+
+.main-logoSearch {
+  margin-right: 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .Header .Logo {
@@ -79,18 +85,25 @@
   }
   .selectLegend {
     margin: 1%;
-    padding-bottom: 2px;
+    padding: 3px;
     width: 20%;
     margin-right: 50px;
     color: var(--light);
     background-color: var(--secondary-color);
-    border-color: rgb(126, 167, 126);
-    border-radius: 5px;
+    border-color: var(--secondary-color);
+    border-radius: 10px;
+    box-shadow: var(--secondary-color);
     font-weight: bold;
+    border-radius:12px 0 12px 0;
+    border:1px solid #ffffff;
+    padding:6px 0 6px 0;
+    padding-bottom: 12px;
+    box-shadow:1px 1px 3px rgb(127, 182, 131);
   }
+  
   .logoLegent {
     margin-top: 6px;
-    margin-left: 8px;
+    margin-left: 18px;
     height: 12px;
     width: 12px;
   }

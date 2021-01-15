@@ -39,7 +39,7 @@ function Header() {
     <div className="Header">
       <div className="logo-header">
         <img className="Logo" src={Logo} alt="logo" />
-        <button className="selectLegend" onClick={changeOpen}> Légendes
+        <button className="selectLegend" onClick={changeOpen}> LÉGENDE
           <img className="logoLegent" src={downArrow} alt="logo legend" /> 
         </button>
       </div>
@@ -71,7 +71,7 @@ function Header() {
                 </li>
                 <li>
                   <img className="image-Legend" src={home} alt="img" />{" "}
-                  Comparateurs Agricoles
+                  Comparateur Agricole
                 </li>
                 <li>
                   {" "}
