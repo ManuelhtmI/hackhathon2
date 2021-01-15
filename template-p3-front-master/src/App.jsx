@@ -8,9 +8,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-       <Header/>
-      <Map /> 
-     
+      <Map />
     </div>
   );
 }
