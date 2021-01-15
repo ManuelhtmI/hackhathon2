@@ -99,12 +99,14 @@ function Map() {
                 <Popup maxHeight={250} maxWidth={350}>
                   <div className="farmerCategory">
                     <h5 className="infosMini2">Profil agriculteur</h5>
+                    
                     <img
                       src={farmers.avatar}
                       alt={farmers.name}
                       className="farmerAvatar"
                     />
                   </div>
+               
                   <div className="fieldSize">
                     <div className="farmSize">
                       <h5 className="farmerText">Taille de l'exploitation:</h5>
@@ -119,9 +121,12 @@ function Map() {
                       />
                     </div>
                   </div>
+                  <hr className="separator">
+                    
+                    </hr>
                   <div className="lastSell">
                     <h5 className="farmerText">Derniere transaction : </h5>{" "}
-                    <p className="infosTitles">{farmers.name}</p>
+                    <p className="infosTitlesBorder">{farmers.name}</p>
                     <h5 className="farmerText">
                       {" "}
                       effectuée le: {farmers.created_at}
@@ -132,6 +137,7 @@ function Map() {
                       src={transaction}
                     />
                   </div>
+                  <hr className="separator2"></hr>
                   <div className="registeredAt">
                     <h5 className="farmerText">
                       A rejoint ComparateurAgricole depuis le:{" "}
