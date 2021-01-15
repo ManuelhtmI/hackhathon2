@@ -50,11 +50,6 @@ function Map() {
   let setMap = [48.4469, 1.4892];
 
   return (
-<<<<<<< HEAD
-    <div id="mapid">
-
-=======
->>>>>>> e63c7e22b106d48a64e7beaa51035c9c749b15c4
     <div>
 
 
@@ -73,41 +68,9 @@ function Map() {
           />
           <Marker position={[48.44855, 1.538156]} icon={homes}>
             <Popup>
-<<<<<<< HEAD
-              {farmers.lat}
-          </Popup>
-              </Marker>
-          )}
-          <EsriLeafletGeoSearch
-            position="topleft"
-            useMapBounds={false}
-          />
-        </MapContainer>
-      </div>
-    </div>
-
-      <Preload />
-      <MapContainer center={setMap} zoom={10} className="map">
-        <TileLayer
-          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        <Marker position={[48.448550, 1.538156]} icon={homes}>
-          <Popup>
-            <a href="https://comparateuragricole.com/"><h2>ComparateurAgricole.com</h2></a>
-          </Popup>
-        </Marker>
-        {buyers.map((buyers) =>
-
-          <Marker position={[buyers.lat, buyers.long]} icon={markerBuyers}>
-            <Popup>
-              <h1>{buyers.name}</h1>
-              <h2>Type: {buyers.type}</h2>
-=======
               <a href="https://comparateuragricole.com/">
                 <h2>ComparateurAgricole.com</h2>
               </a>
->>>>>>> e63c7e22b106d48a64e7beaa51035c9c749b15c4
             </Popup>
           </Marker>
           {buyers.map((buyers) => (
@@ -117,15 +80,6 @@ function Map() {
                 <h2>Type: {buyers.type}</h2>
               </Popup>
             </Marker>
-<<<<<<< HEAD
-          )} 
-
-        </MarkerClusterGroup>
-      </MapContainer>
-    </div >
-
-
-=======
           ))}
           <MarkerClusterGroup
             onClusterClick={(cluster) =>
@@ -197,7 +151,6 @@ function Map() {
         </MapContainer>
       </div>
     </div>
->>>>>>> e63c7e22b106d48a64e7beaa51035c9c749b15c4
   );
 }
 
