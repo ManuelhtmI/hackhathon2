@@ -2,3 +2,20 @@
     margin : 0;
 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+:root {
+  --main-font: "Montserrat", "Helvetica Neve", Arial, Helvetica, Arial,
+  sans-serif;
+  --secondary-font:'Open Sans', sans-serif;  
+  --main-color:#5a9449;
+  --secondary-color:  #558846;
+  --light: #ffffff;
+  --dark: #000000;
+  
+}
+
+html { overflow-y: hidden; } 
