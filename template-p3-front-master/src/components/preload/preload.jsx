@@ -31,8 +31,6 @@ function Preload() {
     
 
     const show = () => {
-        console.log("Transac",idTransac[0].id)
-        console.log(page[0].style.display)
         page[0].style.display = "none"
     }
 
@@ -80,12 +78,12 @@ function Preload() {
                         
                         <div className="total-part-div2">
                             <h2 className="number">{idFarmers.length}</h2>
-                            <h2 className="number-text">FERMIERS TRAVAILLENT AVEC NOUS</h2>
+                            <h2 className="number-text">AGRICULTEURS TRAVAILLENT AVEC NOUS</h2>
                         </div>
                     </div>
 
                     <div className="total-part-div3">
-                        <h2 className="number-text3">ON VOUS LAISSE DECOUVRIR...</h2>
+                        <h2 className="number-text3">REJOIGNEZ NOUS...</h2>
                     </div>
                     
                 </div>
