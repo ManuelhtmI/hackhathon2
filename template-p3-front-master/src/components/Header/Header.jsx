@@ -1,11 +1,24 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
 import Logo from "../../assets/logo.svg";
-import Search from "../../assets/search_logo.png";
-import iconSearch from "../../assets/iconSearch.png";
+import axios from "axios";
+import iconFarmers from "../assets/66307.png";
+import euros from "../assets/euros.png";
+import home from "../assets/home.png";
+import Woman1_1 from "../assets/Woman1_1.png";
+import downArrow from "../../assets/down-arrow.png";
 
 function Header() {
   const [open, setOpen] = useState(true);
+  const [open2, setOpen2] = useState(true);
+
+  const [cities, setCities] = useState("");
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:8000/api/cities")
+      .then((res) => setCities(res.data));
+  }, []);
 
   function changeOpen() {
     if (open === true) {
@@ -14,44 +27,59 @@ function Header() {
       setOpen(true);
     }
   }
+  function changeOpen2() {
+    if (open2 === true) {
+      setOpen2(false);
+    } else {
+      setOpen2(true);
+    }
+  }
 
   return (
     <div className="Header">
-      <div className="logo">
+      <div className="logo-header">
         <img className="Logo" src={Logo} alt="logo" />
-        <div className="container">
-        <img
-            className="logoCity"
-            src={iconSearch}
-            alt="search"
-          />
-          <input  className="input" placeholder="Recherchez votre ville ici..." />{" "}
-          <button className="submi">Recherche</button>
-        </div>
-        
+        <button className="selectLegend" onClick={changeOpen}> Légendes
+          <img className="logoLegent" src={downArrow} alt="logo legend" /> 
+        </button>
       </div>
 
       <button className="search" onClick={changeOpen}>
-        <img className="main-logoSearch" src={Search} alt="search_logo" />
-        Recherche
+        <img className="main-logoSearch" src={downArrow} alt="search_logo" />
+        Légendes
       </button>
       <div className="hidden">
         {open === true ? (
           <div></div>
         ) : (
-          <div className="searchBar-city">
-            <img
-              className="secondary-logoSearch"
-              src={iconSearch}
-              alt="search_logo"
-            />
-
-            <input
-              className="input-SearchBar-city"
-              type="text"
-              placeholder="Recherchez votre ville ici..."
-            />
-            <button className="submit">Rechercher</button>
+          <div className="LegendOpen">
+            <div className="listLegend">
+              <ul>
+                <li>
+                  {" "}
+                  <img className="image-Legend" src={euros} alt="img" />{" "}
+                  Acheteurs
+                </li>
+                <li>
+                  {" "}
+                  <img
+                    className="image-Legend"
+                    src={iconFarmers}
+                    alt="img"
+                  />{" "}
+                  Agriculteurs
+                </li>
+                <li>
+                  <img className="image-Legend" src={home} alt="img" />{" "}
+                  Comparateurs Agricoles
+                </li>
+                <li>
+                  {" "}
+                  <img className="image-Legend" src={Woman1_1} alt="img" />{" "}
+                  Profils Agriculteurs
+                </li>
+              </ul>
+            </div>
           </div>
         )}
       </div>
