@@ -139,6 +139,10 @@
     border-top:3px dotted #E49E33;
 }
 
+.leaflet-top {
+    margin-top: 100px;
+}
+
 @media screen and (min-width:768px) and (max-width: 1024px) {
     .leaflet-container{
         width: 100%;
