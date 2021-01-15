@@ -92,7 +92,7 @@ function Map() {
         ></link>
       </head>
       <Transac />
-      <MapContainer center={setMap} zoom={9} className="map">
+      <MapContainer center={setMap} zoom={9} className="map" >
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

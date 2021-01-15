@@ -3,6 +3,7 @@
 .leaflet-container{
     width: 100%;
     height: 100vh;
+    margin-top: 6.5vh;
 }
 
 .farmerAvatar {
@@ -136,4 +137,20 @@
 
 .separator2 {
     border-top:3px dotted #E49E33;
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    .leaflet-container{
+        width: 100%;
+        height: 100vh;
+        margin-top: 9vh;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .leaflet-container{
+        width: 100%;
+        height: 100vh;
+        margin-top: 12.2vh;
+    }
 }
