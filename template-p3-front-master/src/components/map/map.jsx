@@ -52,6 +52,7 @@ function Map() {
   let setMap = [48.4469, 1.4892]
 
   return (
+    <div id="mapid">
 
     <div>
       <head>
@@ -85,7 +86,6 @@ function Map() {
       </div>
     </div>
 
-    <div id="mapid">
       <Preload />
       <MapContainer center={setMap} zoom={10} className="map">
         <TileLayer
@@ -123,11 +123,12 @@ function Map() {
                 </div>
               </Popup>
             </Marker>
+          )} 
 
-          )}
         </MarkerClusterGroup>
       </MapContainer>
     </div >
+
 
   );
 }
