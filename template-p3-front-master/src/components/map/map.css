@@ -6,11 +6,134 @@
 }
 
 .farmerAvatar {
-    width: 40px;
-    height: 40px;
+    width: 65px;
+    height: 65px;
     margin-top: 16px;
+    justify-content: center;
+    box-shadow: 2px 2px 0px 0px rgba(156, 149, 149, 0.75);
+    border-radius: 50%;
 }
 
 .farmerText{
+    padding: 4px;
+    text-align: start;
+    margin-bottom: 0;
+    margin-top:16px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.farmerCategory {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+ 
+}
+
+
+.fieldSize {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fieldpicture {
+    width: 80px;
+    height: 80px;
+    padding-bottom: 8px;
+}
+
+.infosTitles {
+    font-size: 18px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 8px;
+    color: #E49E33;
+    
+
+}
+.infosTitlesBorder {
+    font-size: 18px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 8px;
+    color: #E49E33;
     padding: 8px;
+    border: 1px solid #E49E33;
+}
+
+.infosMini {
+    font-size:14px;
+    color:#5A9449;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.infosMini2 {
+    font-size:14px;
+    color:#5A9449;
+    font-weight: bold;
+    /* border-bottom: black 1.5px solid; */
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+
+
+.farmSize {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+#hectares {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #5A9449;
+    margin-top:16px;
+    margin-bottom: 16px;
+}
+
+.lastSell {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.registeredAt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.transactionPicture {
+    width: 105px;
+    height: 75px;
+    margin-bottom: 8px;
+}
+
+.separator {
+    border-top:3px dotted#5A9449;
+}
+
+.separator2 {
+    border-top:3px dotted #E49E33;
 }

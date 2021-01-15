@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import "./Header.css";
 import Logo from "../../assets/logo.svg";
-// import iconSearch from "../../assets/iconSearch.png";
-import SearchLogo from "../../assets/search_logo.png";
 import axios from "axios";
 import iconFarmers from "../assets/66307.png";
 import euros from "../assets/euros.png";
