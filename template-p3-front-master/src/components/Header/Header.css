@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 .Header {
   width: 100%;
+  height: 85px;
 }
 .Logo {
   background-color: var(--main-color);
