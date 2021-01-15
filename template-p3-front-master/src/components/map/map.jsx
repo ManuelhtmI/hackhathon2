@@ -1,10 +1,14 @@
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet'
 import './map.css'
+import Header from "../Header/Header"
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import MarkerClusterGroup from 'react-leaflet-markercluster';
 import L from 'leaflet';
+import Transac from '../transac/transac'
+
 import markerBuyer from '../assets/euros.png';
+
 import home from '../assets/home.png';
 import iconFarmers from '../assets/66307.png';
 import useGeoLocation from '../hooks/useGeolocation';
@@ -80,12 +84,14 @@ function Map() {
   return (
     <div id="mapid">
       <Preload />
+      <Header />
       <head>
         <link
           rel="stylesheet"
           href="https://unpkg.com/esri-leaflet-geocoder@2.3.4/dist/esri-leaflet-geocoder.css"
         ></link>
       </head>
+      <Transac />
       <MapContainer center={setMap} zoom={9} className="map">
         <TileLayer
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
@@ -174,7 +180,7 @@ function Map() {
           )}
         </MarkerClusterGroup>
       </MapContainer>
-    </div >
+    </div>
   );
 }
 
